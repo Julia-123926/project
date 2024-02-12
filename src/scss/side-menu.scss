@@ -1,0 +1,134 @@
+$boxShadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+  -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+$highlightColor: #41f6d7;
+$grey: #7e7e82;
+$white: rgb(255, 255, 255);
+
+.side-menu {
+  z-index: 10;
+  flex: 0 0 320px;
+  margin: 0;
+  padding: 0;
+  padding: 25px;
+  background: white;
+  @media (max-width: 1120px) {
+    box-shadow: $boxShadow;
+  }
+  &_hidden {
+    display: none;
+    @media (min-width: 1120px) {
+      display: initial;
+    }
+  }
+  &__menu-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    &__btn {
+      width: 40px;
+      height: 40px;
+    }
+    & .close-btn {
+      width: 40px;
+      height: 40px;
+      background-image: url('../images/close.svg');
+      @media (min-width: 1120px) {
+        display: none;
+      }
+    }
+    & .menu__btn_search {
+      // margin-right: 0;
+      background-image: url('../images/search.svg');
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.menu-content {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  &__item {
+    margin-bottom: 24px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    @media (min-width: 1120px) {
+      margin-bottom: 32px;
+    }
+    &_active {
+      color: $grey;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -25px;
+        color: $highlightColor;
+        width: 4px;
+        height: 32px;
+        background-image: url('../images/highlight.png');
+      }
+    }
+  }
+}
+
+.menu-content__item.menu-content__item_last {
+  margin-bottom: 32px;
+  @media (min-width: 1120px) {
+    margin-bottom: 268px;
+  }
+}
+
+.menu-footer {
+  &__nav {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  &__btn {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+    &_call {
+      background-image: url('../images/call.svg');
+    }
+    &_chat {
+      background-image: url('../images/chat.svg');
+    }
+    &_profile {
+      background-image: url('../images/profile.svg');
+    }
+  }
+  &__e-mail {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-bottom: 12px;
+  }
+  &__number {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    margin-bottom: 8px;
+    @media (min-width: 1120px) {
+      margin-bottom: 40px;
+    }
+  }
+  & .langs {
+    display: flex;
+    gap: 7px;
+    text-transform: uppercase;
+    &__item_active {
+      color: $grey;
+    }
+  }
+}

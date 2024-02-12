@@ -1,0 +1,53 @@
+$bgColor: #24292e;
+$text: #fff;
+$mainBackColor: #f8f8f8;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration:none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  font-family: 'TT Lakes';
+  font-weight: 500;
+  color: #1b1c21;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: $mainBackColor;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+@import './fonts.scss';
+@import './stylenull.scss';
+@import './main-page.scss';
+@import './modals.scss';
+@import './side-menu.scss';
+@import './start-page.scss';
+@import url('https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
