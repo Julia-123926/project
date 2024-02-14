@@ -5,13 +5,26 @@ $grey: #7e7e82;
 
 .main-container {
   max-width: 100%;
-
+  position: relative;
   @media (min-width: 1120px) {
     position: relative;
   }
   &_transparent {
     opacity: 0.1;
     pointer-events: none;
+  }
+  & .gradient {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 24px;
+    height: 100%;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
   }
 }
 
@@ -21,6 +34,8 @@ $grey: #7e7e82;
     padding-right: 0;
     border-bottom: 1px solid #d9fff5;
     background: white;
+    position: relative;
+    z-index: 3;
     @media (min-width: 768px) {
       padding: 20px 24px;
     }
@@ -249,10 +264,11 @@ $grey: #7e7e82;
 
     & .cps-img {
       width: 100vw;
+      position: relative;
+      z-index: 3;
       @media (min-width: 768px) {
         width: 360px;
         height: 220px;
-        position: static;
         padding-right: 24px;
       }
       @media (min-width: 1120px) {
@@ -346,4 +362,3 @@ $grey: #7e7e82;
     }
   }
 }
-

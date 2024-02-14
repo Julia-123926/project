@@ -10,6 +10,7 @@ $mainColor: #1b1c21;
   padding-right: 0;
   border-bottom: 1px solid #d9fff5;
   background-color: #f8f8f8;
+
   @media (min-width: 768px) {
     padding: 20px 24px;
   }
@@ -36,6 +37,9 @@ $mainColor: #1b1c21;
   letter-spacing: -0.2px;
   text-transform: uppercase;
   font-weight: 400;
+  position: relative;
+  z-index: 3;
+
   @media (min-width: 768px) {
     padding-left: 35px;
   }

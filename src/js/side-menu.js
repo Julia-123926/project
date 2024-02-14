@@ -1,11 +1,12 @@
-
 const burgerBtn = document.querySelector('.menu__btn_burger')
 const sideMenu = document.querySelector('.side-menu_hidden')
 const page = document.getElementById('addOpacity')
 const closeBtn = document.querySelector('.menu-header__btn.close-btn')
+const mobile = window.matchMedia('(max-width: 767px)')
 
 function closeByHover(e) {
   if (e.target.classList.contains('content-wrapper')) {
+    console.log(e.target)
     closeSideModal()
   }
 }
@@ -19,10 +20,11 @@ function closeSideModal() {
 burgerBtn.addEventListener('click', function () {
   sideMenu.style.display = 'block'
   page.classList.add('main-container_transparent')
-  sideMenu.style.height = '1850px'
+  if (mobile.matches) {
+    sideMenu.style.position = 'fixed'
+    sideMenu.style.width = '320px'
+  }
   document.addEventListener('click', closeByHover)
 })
 
 closeBtn.addEventListener('click', closeSideModal)
-
-

@@ -8,9 +8,13 @@ const hiddenModalFeedback = document.querySelector(
 const page = document.getElementById('addOpacity')
 const closeModalBtns = document.querySelectorAll('.modal .close-btn')
 
+const width840 = window.matchMedia('(max-width: 840px)')
+const sideMenu = document.querySelector('.side-menu_hidden')
+
 function closeByHover(e) {
   if (e.target.classList.contains('content-wrapper')) {
-    hiddenModalCall.style.display = 'none'
+    hiddenModalCall.style.display = 'none';
+    hiddenModalFeedback.style.display = 'none';
     page.classList.remove('main-container_transparent')
   }
 }
@@ -19,21 +23,28 @@ callBtns.forEach((btn) => {
   btn.addEventListener('click', function () {
     hiddenModalCall.style.display = 'block'
     page.classList.add('main-container_transparent')
+    if (width840.matches) {
+      sideMenu.style.display = 'none'
+    }
     document.addEventListener('click', closeByHover)
   })
 })
 
 feedbackBtns.forEach((btn) => {
   btn.addEventListener('click', function () {
-    hiddenModalCall.style.display = 'block'
+    hiddenModalFeedback.style.display = 'block'
     page.classList.add('main-container_transparent')
+    if (width840.matches) {
+      sideMenu.style.display = 'none'
+    }
     document.addEventListener('click', closeByHover)
   })
 })
 
 closeModalBtns.forEach((btn) => {
   btn.addEventListener('click', function () {
-    hiddenModalCall.style.display = 'none'
+    hiddenModalCall.style.display = 'none';
+    hiddenModalFeedback.style.display = 'none'
     page.classList.remove('main-container_transparent')
     document.removeEventListener('click', closeByHover)
   })
