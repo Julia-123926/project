@@ -20,10 +20,6 @@ function closeSideModal() {
 burgerBtn.addEventListener('click', function () {
   sideMenu.style.display = 'block'
   page.classList.add('main-container_transparent')
-  if (mobile.matches) {
-    sideMenu.style.position = 'fixed'
-    sideMenu.style.width = '320px'
-  }
   document.addEventListener('click', closeByHover)
 })
 
