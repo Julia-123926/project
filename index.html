@@ -12,8 +12,8 @@
         <button class="close-btn"></button>
         <h1 class="modal__title">Обратная связь</h1>
         <form action="" method="post" class="modal__form">
-          <input class="modal__input" type="text" name="user_name" placeholder="Имя">
-          <input class="modal__input" type="tel" name="user_tel" placeholder="Телефон">
+          <input class="modal__input" type="text" name="user_name" placeholder="Имя" required>
+          <input class="modal__input" type="tel" name="user_tel" placeholder="Телефон" required>
           <input class="modal__input" type="email" name="user_email" placeholder="Электронная почта">
           <textarea class="modal__area modal__input" name="user_message" id="" placeholder="Сообщение"></textarea>
           <span class="modal__text">
@@ -32,7 +32,7 @@
         <button class="close-btn"></button>
         <h1 class="modal__title">Заказать звонок</h1>
         <form action="" method="post" class="modal__form">
-          <input class="modal__input" type="tel" name="user_tel" placeholder="Телефон">
+          <input class="modal__input" type="tel" name="user_tel" placeholder="Телефон" required>
           <span class="modal__text">
             Нажимая “отправить”, вы даете согласие на
             <a class="modal__link" href="#">обработку персональных данных</a> и
@@ -53,7 +53,7 @@
           <a href="#" class="menu-header__logo">
             <img src="images/logo.svg" alt="CPS">
           </a>
-          <button class="menu-header__btn menu__btn_search"></button>
+          <button class="round-btn round-btn_search"></button>
         </header>
         <nav>
           <ul class="side-menu__menu-content menu-content">
@@ -85,9 +85,9 @@
         </nav>
         <footer class="side-menu__menu-footer menu-footer">
           <nav class="menu-footer__nav">
-            <button class="menu-footer__btn menu-footer__btn_call btn_call"></button>
-            <button class="menu-footer__btn menu-footer__btn_chat btn_chat"></button>
-            <button class="menu-footer__btn menu-footer__btn_profile"></button>
+            <button class="round-btn round-btn_call"></button>
+            <button class="round-btn round-btn_chat"></button>
+            <button class="round-btn round-btn_profile"></button>
           </nav>
           <a href="mailto:mail@cps.com" class="menu-footer__e-mail">mail@cps.com</a>
           <a href="tel:88008908900" class="menu-footer__number">8 800 890 8900</a>
@@ -103,19 +103,19 @@
         <header class="header">
           <div class="header__container">
             <nav class="header__menu menu">
-              <button class="menu__btn menu__btn_burger"></button>
+              <button class="round-btn round-btn_burger"></button>
               <a href="#" class="menu__logo">
                 <img src="./images/logo.svg" alt="CPS">
               </a>
               <div class="menu__divider menu__divider_first"></div>
               <div class="menu__list">
-                <button class="menu__btn menu__btn_repair"></button>
-                <button class="menu__btn menu__btn_checkstatus"></button>
+                <button class="round-btn round-btn_repair"></button>
+                <button class="round-btn round-btn_checkstatus"></button>
                 <div class="middle-screen">
                   <div class="middle-screen__menu">
-                    <button class="menu__btn menu__btn_call btn_call"></button>
-                    <button class="menu__btn menu__btn_chat btn_chat"></button>
-                    <button class="menu__btn menu__btn_profile"></button>
+                    <button class="round-btn round-btn_call"></button>
+                    <button class="round-btn round-btn_chat"></button>
+                    <button class="round-btn round-btn_profile"></button>
                     <div class="menu__divider menu__divider"></div>
                   </div>
                 </div>
@@ -130,8 +130,8 @@
                 <div class="top__menu big-screen">
                   <h1 class="top__title">Услуги и сервисы</h1>
                   <div class="big-screen__items">
-                    <button class="big-screen__btn big-screen__btn_repair"></button>
-                    <button class="big-screen__btn big-screen__btn_checkstatus"></button>
+                    <button class="round-btn round-btn_repair"></button>
+                    <button class="round-btn round-btn_checkstatus"></button>
                   </div>
                 </div>
                 <nav>

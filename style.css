@@ -595,7 +595,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 320px;
   margin: 0;
   padding: 0;
-  padding: 25px;
+  padding: 20px;
   background: white; }
   @media (max-width: 1120px) {
     .side-menu {
@@ -608,7 +608,7 @@ h1, h2, h3, h4, h5, h6 {
   .side-menu__menu-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px; }
+    margin-bottom: 45px; }
     .side-menu__menu-header__btn {
       width: 40px;
       height: 40px; }
@@ -619,17 +619,13 @@ h1, h2, h3, h4, h5, h6 {
       @media (min-width: 1120px) {
         .side-menu__menu-header .close-btn {
           display: none; } }
-    .side-menu__menu-header .menu__btn_search {
-      background-image: url(./static/search.svg);
-      width: 40px;
-      height: 40px; }
 
 .menu-content {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px; }
   .menu-content__item {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     opacity: 1;
     transition: opacity 0.3s ease-in-out; }
     @media (min-width: 1120px) {
@@ -648,54 +644,39 @@ h1, h2, h3, h4, h5, h6 {
         background-image: url(./static/highlight.png); }
 
 .menu-content__item.menu-content__item_last {
-  margin-bottom: 32px; }
+  margin-bottom: 30px; }
   @media (min-width: 1120px) {
     .menu-content__item.menu-content__item_last {
       margin-bottom: 268px; } }
 
-.menu-footer__nav {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 16px; }
-
-.menu-footer__btn {
-  width: 40px;
-  height: 40px;
-  opacity: 1;
-  transition: opacity 0.3s ease-out; }
-  .menu-footer__btn:hover {
-    opacity: 0.7; }
-  .menu-footer__btn_call {
-    background-image: url(./static/call.svg); }
-  .menu-footer__btn_chat {
-    background-image: url(./static/chat.svg); }
-  .menu-footer__btn_profile {
-    background-image: url(./static/profile.svg); }
-
-.menu-footer__e-mail {
-  display: block;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  margin-bottom: 12px; }
-
-.menu-footer__number {
-  display: block;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -0.6px;
-  margin-bottom: 8px; }
-  @media (min-width: 1120px) {
-    .menu-footer__number {
-      margin-bottom: 40px; } }
-
-.menu-footer .langs {
-  display: flex;
-  gap: 7px;
-  text-transform: uppercase; }
-  .menu-footer .langs__item_active {
-    color: #7e7e82; }
+.menu-footer {
+  padding-bottom: 15px; }
+  .menu-footer__nav {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px; }
+  .menu-footer__e-mail {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-bottom: 12px; }
+  .menu-footer__number {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    margin-bottom: 8px; }
+    @media (min-width: 1120px) {
+      .menu-footer__number {
+        margin-bottom: 40px; } }
+  .menu-footer .langs {
+    display: flex;
+    gap: 7px;
+    text-transform: uppercase; }
+    .menu-footer .langs__item_active {
+      color: #7e7e82; }
 
 .main-container {
   max-width: 100%;
@@ -759,42 +740,6 @@ h1, h2, h3, h4, h5, h6 {
   .menu__logo {
     margin-left: 4px; } }
 
-.menu__btn {
-  width: 40px;
-  height: 40px;
-  background-size: cover;
-  opacity: 1;
-  transition: opacity 0.3s ease-out; }
-  .menu__btn :hover {
-    opacity: 0.7; }
-  .menu__btn_burger {
-    background-image: url(./static/burger.svg); }
-    @media (min-width: 768px) {
-      .menu__btn_burger {
-        order: -2;
-        margin-right: 4px; } }
-  .menu__btn_repair {
-    background-image: url(./static/repair.svg); }
-  .menu__btn_checkstatus {
-    background-image: url(./static/checkstatus.svg); }
-    @media (min-width: 768px) {
-      .menu__btn_checkstatus {
-        margin-left: 4px; } }
-  .menu__btn_call {
-    background-image: url(./static/call.svg); }
-  .menu__btn_chat {
-    background-image: url(./static/chat.svg); }
-  .menu__btn_profile {
-    background-image: url(./static/profile.svg); }
-    @media (min-width: 768px) {
-      .menu__btn_profile {
-        margin-right: 4px; } }
-  .menu__btn_profile {
-    background-image: url(./static/profile.svg); }
-    @media (min-width: 768px) {
-      .menu__btn_profile {
-        margin-right: 4px; } }
-
 .menu__divider {
   width: 2px;
   height: 32px;
@@ -847,38 +792,29 @@ h1, h2, h3, h4, h5, h6 {
       display: flex;
       gap: 160px; } }
 
-.top .big-screen__btn {
-  width: 40px;
-  height: 40px;
-  background-size: cover;
-  opacity: 1;
-  transition: opacity 0.3s ease-out; }
-  @media (min-width: 1120px) {
-    .top .big-screen__btn::before {
-      white-space: nowrap;
-      position: relative;
-      right: 130px;
-      font-weight: 500;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 24px;
-      /* 150% */
-      letter-spacing: -0.2px; } }
-  .top .big-screen__btn_repair {
-    background-image: url(./static/repair.svg); }
-    @media (min-width: 1120px) {
-      .top .big-screen__btn_repair::before {
-        content: 'Оставить заявку'; } }
-  .top .big-screen__btn_checkstatus {
-    background-image: url(./static/checkstatus.svg); }
-    @media (min-width: 768px) {
-      .top .big-screen__btn_checkstatus {
-        margin-left: 4px; } }
-    @media (min-width: 1120px) {
-      .top .big-screen__btn_checkstatus::before {
-        content: 'Статус ремонта'; } }
-  .top .big-screen__btn :hover {
-    opacity: 0.7; }
+@media (min-width: 1120px) {
+  .top .big-screen .round-btn::before {
+    white-space: nowrap;
+    position: relative;
+    right: 130px;
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.2px; } }
+
+@media (min-width: 1120px) {
+  .top .big-screen .round-btn_repair::before {
+    content: 'Оставить заявку'; } }
+
+@media (min-width: 768px) {
+  .top .big-screen .round-btn_checkstatus {
+    margin-left: 4px; } }
+
+@media (min-width: 1120px) {
+  .top .big-screen .round-btn_checkstatus::before {
+    content: 'Статус ремонта'; } }
 
 .top .services-list {
   display: flex;
@@ -1002,6 +938,39 @@ h1, h2, h3, h4, h5, h6 {
       width: 24px;
       height: 24px;
       background-image: url(./static/hide.svg); }
+
+.round-btn {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 0.3s ease-out; }
+  .round-btn :hover {
+    opacity: 0.7; }
+  .round-btn_burger {
+    background-image: url(./static/burger.svg); }
+    @media (min-width: 768px) {
+      .round-btn_burger {
+        order: -2;
+        margin-right: 4px; } }
+  .round-btn_repair {
+    background-image: url(./static/repair.svg); }
+  .round-btn_checkstatus {
+    background-image: url(./static/checkstatus.svg); }
+    @media (min-width: 768px) {
+      .round-btn_checkstatus {
+        margin-left: 4px; } }
+  .round-btn_call {
+    background-image: url(./static/call.svg); }
+  .round-btn_chat {
+    background-image: url(./static/chat.svg); }
+  .round-btn_profile {
+    background-image: url(./static/profile.svg); }
+    @media (min-width: 768px) {
+      .round-btn_profile {
+        margin-right: 4px; } }
+  .round-btn_search {
+    background-image: url(./static/search.svg); }
 
 :root {
   /*
