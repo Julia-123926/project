@@ -9,7 +9,7 @@ $white: rgb(255, 255, 255);
   flex: 0 0 320px;
   margin: 0;
   padding: 0;
-  padding: 25px;
+  padding: 20px;
   background: white;
   @media (max-width: 1120px) {
     box-shadow: $boxShadow;
@@ -23,7 +23,7 @@ $white: rgb(255, 255, 255);
   &__menu-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     &__btn {
       width: 40px;
       height: 40px;
@@ -36,12 +36,6 @@ $white: rgb(255, 255, 255);
         display: none;
       }
     }
-    & .menu__btn_search {
-      // margin-right: 0;
-      background-image: url('../images/search.svg');
-      width: 40px;
-      height: 40px;
-    }
   }
 }
 
@@ -50,7 +44,7 @@ $white: rgb(255, 255, 255);
   line-height: 24px;
   letter-spacing: -0.2px;
   &__item {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
     @media (min-width: 1120px) {
@@ -74,37 +68,20 @@ $white: rgb(255, 255, 255);
 }
 
 .menu-content__item.menu-content__item_last {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   @media (min-width: 1120px) {
     margin-bottom: 268px;
   }
 }
 
 .menu-footer {
+  padding-bottom: 15px;
   &__nav {
     display: flex;
     gap: 16px;
     margin-bottom: 16px;
   }
-  &__btn {
-    width: 40px;
-    height: 40px;
-    opacity: 1;
-    transition: opacity 0.3s ease-out;
 
-    &:hover {
-      opacity: 0.7;
-    }
-    &_call {
-      background-image: url('../images/call.svg');
-    }
-    &_chat {
-      background-image: url('../images/chat.svg');
-    }
-    &_profile {
-      background-image: url('../images/profile.svg');
-    }
-  }
   &__e-mail {
     display: block;
     font-size: 16px;
@@ -127,6 +104,7 @@ $white: rgb(255, 255, 255);
     display: flex;
     gap: 7px;
     text-transform: uppercase;
+    // margin-bottom: 20px;
     &__item_active {
       color: $grey;
     }

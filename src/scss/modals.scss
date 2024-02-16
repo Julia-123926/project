@@ -18,7 +18,7 @@ $boxShadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
   padding-top: 24px;
   display: flex;
   flex-direction: column;
-  .close-btn {
+  & .close-btn {
     background-image: url('../images/return.svg');
     width: 40px;
     height: 40px;

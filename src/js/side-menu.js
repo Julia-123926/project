@@ -1,4 +1,4 @@
-const burgerBtn = document.querySelector('.menu__btn_burger')
+const burgerBtn = document.querySelector('.round-btn_burger')
 const sideMenu = document.querySelector('.side-menu_hidden')
 const page = document.getElementById('addOpacity')
 const closeBtn = document.querySelector('.menu-header__btn.close-btn')
@@ -19,6 +19,8 @@ function closeSideModal() {
 
 burgerBtn.addEventListener('click', function () {
   sideMenu.style.display = 'block'
+  sideMenu.style.position = 'fixed'
+  sideMenu.style.width = '320px'
   page.classList.add('main-container_transparent')
   document.addEventListener('click', closeByHover)
 })

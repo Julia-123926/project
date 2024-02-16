@@ -76,51 +76,7 @@ $grey: #7e7e82;
       margin-left: 4px;
     }
   }
-  &__btn {
-    width: 40px;
-    height: 40px;
-    background-size: cover;
-    opacity: 1;
-    transition: opacity 0.3s ease-out; ///////////
-    & :hover {
-      opacity: 0.7;
-    }
-    &_burger {
-      background-image: url('../images/burger.svg');
-      @media (min-width: 768px) {
-        order: -2;
-        margin-right: 4px;
-      }
-    }
-    &_repair {
-      background-image: url('../images/repair.svg');
-    }
-    &_checkstatus {
-      background-image: url('../images/checkstatus.svg');
-      @media (min-width: 768px) {
-        margin-left: 4px;
-      }
-    }
-    &_call {
-      background-image: url('../images/call.svg');
-    }
-    &_chat {
-      background-image: url('../images/chat.svg');
-    }
-    &_profile {
-      background-image: url('../images/profile.svg');
-      @media (min-width: 768px) {
-        margin-right: 4px;
-      }
-    }
-    &_profile {
-      background-image: url('../images/profile.svg');
-      @media (min-width: 768px) {
-        margin-right: 4px;
-      }
-    }
-  }
-
+  
   &__divider {
     width: 2px;
     height: 32px;
@@ -182,12 +138,7 @@ $grey: #7e7e82;
       }
     }
 
-    &__btn {
-      width: 40px;
-      height: 40px;
-      background-size: cover;
-      opacity: 1;
-      transition: opacity 0.3s ease-out;
+    & .round-btn {
       @media (min-width: 1120px) {
         &::before {
           white-space: nowrap;
@@ -200,18 +151,14 @@ $grey: #7e7e82;
           letter-spacing: -0.2px;
         }
       }
-
       &_repair {
-        background-image: url('../images/repair.svg');
         @media (min-width: 1120px) {
           &::before {
             content: 'Оставить заявку';
           }
         }
       }
-
       &_checkstatus {
-        background-image: url('../images/checkstatus.svg');
         @media (min-width: 768px) {
           margin-left: 4px;
         }
@@ -220,9 +167,6 @@ $grey: #7e7e82;
             content: 'Статус ремонта';
           }
         }
-      }
-      & :hover {
-        opacity: 0.7;
       }
     }
   }
@@ -362,3 +306,45 @@ $grey: #7e7e82;
     }
   }
 }
+
+ .round-btn {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 0.3s ease-out; 
+  & :hover {
+    opacity: 0.7;
+  }
+  &_burger {
+    background-image: url('../images/burger.svg');
+    @media (min-width: 768px) {
+      order: -2;
+      margin-right: 4px;
+    }
+  }
+  &_repair {
+    background-image: url('../images/repair.svg');
+  }
+  &_checkstatus {
+    background-image: url('../images/checkstatus.svg');
+    @media (min-width: 768px) {
+      margin-left: 4px;
+    }
+  }
+  &_call {
+    background-image: url('../images/call.svg');
+  }
+  &_chat {
+    background-image: url('../images/chat.svg');
+  }
+  &_profile {
+    background-image: url('../images/profile.svg');
+    @media (min-width: 768px) {
+      margin-right: 4px;
+    }
+  }
+  &_search {
+    background-image: url('../images/search.svg');
+  }
+  }
