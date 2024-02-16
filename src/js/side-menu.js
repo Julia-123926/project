@@ -21,6 +21,7 @@ burgerBtn.addEventListener('click', function () {
   sideMenu.style.display = 'block'
   sideMenu.style.position = 'fixed'
   sideMenu.style.width = '320px'
+  sideMenu.style.height = '100vh'
   page.classList.add('main-container_transparent')
   document.addEventListener('click', closeByHover)
 })
